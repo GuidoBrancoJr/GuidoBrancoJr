@@ -1,0 +1,53 @@
+# Trabalhando com Data Frame
+# definir area de trabalho
+setwd("C:/Users/Guido A Branco Jr/Desktop/Mestrado/DADOS")
+
+# importando base de dados
+df <- read.csv2("DataFrame2.csv")
+#df <- read_delim("DataFrame.csv", delim = ";", escape_double = FALSE, trim_ws = TRUE)
+# analisando data frame
+View(df)
+#tipos de dados
+str(df)
+summary(df)
+# seleciona as variaveis
+df
+df[1]
+df[2]
+df[3]
+df[4]
+df[5]
+df[6]
+df $DIA_SEM
+col1 <- df[1]
+col2 <- df$DIA_SEM
+
+class(df$DIA_SEM)
+class(col1)
+class(col2) 
+
+# Modificando Data Frame
+# exculindo uma coluna
+
+df$ONIBUS <- NULL
+
+# alterando o tipo de variável dentro do Data Frame
+df$UPS # é uma variável de categorias 
+summary(df$UPS)
+# Com o uso do summary traz informações que não estão fazendo sentido neste momento
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# 1.000   1.000   1.000   1.889   1.000   5.000 
+# por ser uma variavel categorica não faz sentido ter a media e mediana por exemplo
+# para resolver e melhorar a informação vamos modificar o dado para o tipo fator
+df$UPS <- as.factor(df$UPS)
+df$UPS
+summary(df$UPS)
+
+# Criar uma nova coluna no Data Frame
+df$nova <- "a" #criou nava coluna com valor a para todos os registros
+class(df$nova)
+df$nova <- c(2,5,6) # insere os valores em todos os registro desta coluna
+df$nova <- c(2,5,6,NA,NA,NA,NA,NA,NA) # valores somente nos 3 primeiros registros
+df$nova <- NA
+df$nova[1:3] <- c(2,5,6)
+class(df$nova)

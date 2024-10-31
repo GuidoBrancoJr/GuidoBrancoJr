@@ -1,0 +1,17 @@
+rpart(Preço ~ ., ...):
+
+	A função rpart é usada para criar uma árvore de decisão.
+	O argumento Preço ~ . especifica o modelo que será ajustado. Aqui, Preço é a variável dependente (ou variável de resposta), e . representa todas as outras variáveis do conjunto de dados como variáveis independentes (ou preditoras).
+	Essencialmente, este comando indica que você quer prever a variável Preço usando todas as outras variáveis presentes no conjunto de dados treino.
+
+data = treino:
+
+	O argumento data especifica o conjunto de dados que será utilizado para treinar o modelo. Neste caso, o conjunto de dados é chamado treino.
+
+control = rpart.control(cp=0):
+
+	rpart.control é uma função que permite ajustar vários parâmetros de controle para a construção da árvore de decisão.
+	O argumento cp=0 especifica o parâmetro de complexidade (complexity parameter ou cp). O parâmetro cp controla o processo de poda da árvore.
+	Definir cp = 0 significa que a árvore será crescida ao máximo possível sem qualquer poda. Isso resulta em uma árvore completamente expandida, o que pode levar ao overfitting, pois a árvore tentará se ajustar perfeitamente aos dados de treinamento.
+
+Resumindo, esse código cria uma árvore de decisão para prever a variável Preço, utilizando todas as outras variáveis do conjunto de dados treino como preditoras, e com uma árvore completamente expandida, sem qualquer poda aplicada.

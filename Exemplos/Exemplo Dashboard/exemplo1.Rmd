@@ -1,0 +1,70 @@
+---
+title: "TESTE"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: cerulean
+    runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+
+```
+
+
+Pagina 1
+===
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Grafico A
+
+```{r}
+ 
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Grafico B
+
+```{r}
+
+```
+
+### Grafico C
+
+```{r}
+
+```
+
+
+Pagina 2
+===
+Column {data-width=250}
+---
+### Grafico 1
+```{r}
+
+```
+ 
+Column {.tabset}
+---
+### Dados 1
+```{r}
+
+```
+ 
+### Dados 2
+```{r}
+
+```
+  
+ 
+
+

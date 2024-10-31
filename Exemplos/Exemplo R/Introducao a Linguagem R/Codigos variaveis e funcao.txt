@@ -1,0 +1,65 @@
+#declaração de variavel
+ a <- 10
+ b <- "Guido"
+ 
+ a
+ b
+ 
+ #erro na atribuição
+ 
+ c -> 11
+ 
+ #mas assim não tem erro
+ 
+ 11 -> c
+  
+ # criando uma variavel e atribuindo valor
+ 
+ d <- c
+ # para continuar vamos limpar as variaveis no global environment através do icone da vassourinha
+ # com este evento as variaveis deixaram de existir
+ # vamos criar novas variaveis para novos exemplos
+  
+ a <- 5
+ b <- 4
+ c <- a + b
+ c
+ # função para concatenar caracteres
+ 
+ x<- "Guido"
+ y<- "Branco"
+ 
+ z <- c(x,y)
+ z
+ ?c # O interrogação exibe o help da função
+ # a função c() também aceita valores numericos ex:
+ d <- c(2,3,5,6)
+ d
+ # a função c() implemeta um vetor organizando os valores e posições
+ # exemplo de leitura de vetor
+ d[1]
+ d[2]
+ #outra função muito utilizada é a summary, exemplo:
+ summary(d)
+ # por ser um vetor numerico o retorno vai ser bem interessante - valores estatistico
+ # Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ # 2.00    2.75    4.00    4.00    5.25    6.00
+ # valor minimo | 1º quartil | mediana | media | 3º quartil |valor maximo
+ # quando executo a mesma função para caracteres o comportamento será outro
+ summary(z)
+ #Length     Class      Mode 
+ #   2    character   character
+
+ # função pacote não padrão
+ ?str_c
+ #  Nenhuma documentação para ‘sqrt_c’ nos pacotes e bibliotecas especificados
+ str_c
+ # temos que importar esta função para poder utilizar
+ # usaremos o site https://www.rdocumentation.org/ e pesquisar a função
+ install.packages("stringr")
+ library(stringer)
+ ?str_c
+ nome <- "Guido"
+ sobrenome <- "Ap Branco Junior"
+ nomecompleto <- str_c(nome," ", sobrenome)
+ nomecompleto
