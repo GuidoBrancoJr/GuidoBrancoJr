@@ -1,12 +1,7 @@
-- 👋 Oi, eu sou @GuidoBrancoJr
-- 👀 Estou interessado em conteúdo de programação
-- 🌱 Atualmente estou aprendendo Ciências de Dados.
-- 💞️ Estou procurando colaborar com programadores.
-- 📫 Como entrar em contato: guido.branco@etec.sp.gov.br
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+<div align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=GuidoBrancoJr&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_dark&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=GuidoBrancoJr&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=github_dark&hide_border=false&order=2" height="150" alt="languages graph"  />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=GuidoBrancoJr&radius=16&theme=github-dark&area=true&order=5" height="300" alt="activity-graph graph"  />
+</div>
 
-<!---
-GuidoBrancoJr/GuidoBrancoJr is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+###
